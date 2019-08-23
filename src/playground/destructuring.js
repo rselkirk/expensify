@@ -1,3 +1,5 @@
+// OBJECT DESTRUCTURING
+
 const person = {
   name: 'Matilda',
   age: 27,
@@ -31,3 +33,17 @@ const book = {
 const { name: publisherName = 'Self Published' } = book.publisher;
 
 console.log(publisherName);
+
+// ARRAY DESTRUCTURING
+
+const address = ['Leroi Ave', 'Rossland', 'BC', 'V0G1Y0'];
+
+const [streetAddress, city, province, postalCode] = address;
+
+console.log(`You are in ${streetAddress} ${city}`)
+
+const item = ['coffee', '$2.00', '$2.50', '$2.75'];
+
+const [,, mediumPrice] = item;
+
+console.log(`A medium hot coffee costs ${mediumPrice}`)
