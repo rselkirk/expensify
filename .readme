@@ -1,0 +1,7 @@
+To run dev server:
+
+`yarn run dev-server`
+
+To run test suite on watch mode:
+
+`yarn test --  --watch`
